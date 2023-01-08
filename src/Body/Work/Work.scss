@@ -1,0 +1,33 @@
+.Work{
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: auto;
+    input{
+        height: 70px;
+        width: 80%;
+        border-radius: 12px;
+        background-color: transparent;
+        color: var(--tertiary-color);
+        font-size: 20px;
+        padding: 20px;
+        margin: 25px;
+        &::placeholder{
+            color: var(--tertiary-color);
+            opacity: 0.5;
+        }
+    }
+    button{
+        height: 65px;
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+        border-radius: 12px;
+        font-size: 50px;
+        width: 65px;
+        margin: 25px;
+        cursor: pointer;
+    }
+}
+}

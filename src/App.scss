@@ -1,0 +1,22 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@mixin flex($justify,$direct){
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+  flex-direction: $direct;
+}
+
+body{
+  background-color: var(--secondary-color);
+}
+
+:root{
+  --primary-color : rgb(0, 0, 82);;
+  --secondary-color: rgb(65, 71, 109,0.5);
+  --tertiary-color:rgb(255, 255, 255);
+}

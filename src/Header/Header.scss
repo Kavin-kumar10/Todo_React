@@ -1,0 +1,23 @@
+@mixin flex($justify,$direct){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-direction: $direct;
+  }
+  
+
+.Header{
+    @include flex(center, row);
+    .box{
+        @include flex(space-between,row);
+        margin:30px 50px;
+        border-radius:20px;
+        height:100px;
+        width: 80%;
+        background-color:var(--primary-color);
+        h2{
+            color: var(--tertiary-color);
+            margin: 0px 50px;
+        }
+    }
+}

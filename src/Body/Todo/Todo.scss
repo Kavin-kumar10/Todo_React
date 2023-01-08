@@ -1,0 +1,45 @@
+.Todo{
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    .todos{
+        height: 80px;
+        background-color: var(--secondary-color);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: line-through;
+        }
+        &__del{
+            border: 1px solid red;
+            border-radius: 12px;
+            padding: 5px;
+        }
+        &__details{
+            p{
+                opacity: 0.5;
+            }
+        }
+        &__details>*{
+            margin:5px 0px;
+        }
+    }
+    .todos>*{
+        margin: 12px 30px;
+    }
+}
+.Todo>*{
+    margin: 12px;
+}
