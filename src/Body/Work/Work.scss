@@ -6,27 +6,33 @@
         width: 80vw;
         height: auto;
     input{
-        height: 70px;
+        height: 55px;
         width: 80%;
-        border-radius: 12px;
+        border-radius: 10px;
+        outline: none;
         background-color: transparent;
         color: var(--tertiary-color);
         font-size: 20px;
         padding: 20px;
         margin: 25px;
+//checkit out
+
+        // border-width: 0 0 2px;
+        // border-color: aqua;
         &::placeholder{
             color: var(--tertiary-color);
             opacity: 0.5;
         }
     }
     button{
-        height: 65px;
+        height: 55px;
         background-color: var(--tertiary-color);
         color: var(--primary-color);
         border-radius: 12px;
-        font-size: 50px;
-        width: 65px;
-        margin: 25px;
+        font-size: 20px;
+        padding: 0px 10px;
+        width: auto;
+        margin: 8px;
         cursor: pointer;
     }
 }

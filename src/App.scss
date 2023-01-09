@@ -1,3 +1,11 @@
+// font-family: 'Cutive Mono', monospace;
+// font-family: 'Great Vibes', cursive;
+// font-family: 'Henny Penny', cursive;
+// font-family: 'Montez', cursive;
+// font-family: 'Poiret One', cursive;
+// font-family: 'Sacramento', cursive;
+// font-family: 'Viaoda Libre', cursive;
+
 *{
   margin: 0px;
   padding: 0px;
@@ -12,11 +20,15 @@
 }
 
 body{
-  background-color: var(--secondary-color);
+  background:linear-gradient(#333333,#76CCB1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Poiret One', cursive;
 }
 
 :root{
-  --primary-color : rgb(0, 0, 82);;
-  --secondary-color: rgb(65, 71, 109,0.5);
-  --tertiary-color:rgb(255, 255, 255);
+  --primary-color : #76CCB1;
+  --secondary-color: #333333;
+  --tertiary-color:white;
 }

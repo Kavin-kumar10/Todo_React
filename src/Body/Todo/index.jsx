@@ -5,9 +5,9 @@ import "./Todo.scss"
 
 
 const Todo = () =>{
-    const [todos,setTodo] = useContext(ListContext);
+    const [todos,setTodo,setTodosandSave,loadData] = useContext(ListContext);
     const handleDelete = (id) =>{
-        setTodo(todos.filter((todo)=>todo.id != id))
+        setTodosandSave(todos.filter((todo)=>todo.id != id))
     }
     // const handleComplete = (todo) =>{
     //     setTodo(
@@ -23,6 +23,9 @@ const Todo = () =>{
     return(
         <div className="Todo">
             {
+                (todos.length == 0)?
+                <h2 style={{color:"black"}}>- No Data - </h2>
+                :
                 todos?.map((todo,index)=>{
                     return(
                         <div className="todos" key={index}>
